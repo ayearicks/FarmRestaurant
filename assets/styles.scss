@@ -1,0 +1,290 @@
+$primaryColor: rgb(245, 243, 241);
+$secondaryColor: rgb(235, 183, 41);
+$headingColor: rgb(11, 97, 8);
+$trimColor: rgb(112, 72, 20);
+$borderRadius: 20px;
+
+
+body {
+    background-color: $primaryColor;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.container-fluid {
+    margin: 0;
+    padding: 0;
+}
+
+.container-fluid .heading {
+    background-image:
+        linear-gradient(to right, (rgba(181, 172, 73, 0.4), rgba(60, 165, 92, 0.4))), url('./img/rob-jaudon-farm.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+}
+
+// header nav bar
+.navbar {
+    display: flex;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.navbar-brand img {
+    width: 10vh;
+}
+
+.navbar a {
+    color: $headingColor !important;
+    font-size: 22px;
+}
+
+.nav-link:hover {
+    color: $trimColor !important;
+}
+
+.logoImg {
+    display: block;
+    margin: -110px auto 100px auto;
+}
+
+// Responsive heading/navigation styling
+@media only screen  and (max-width: 600px) {
+    .container-fluid .heading {
+        background-image:
+            linear-gradient(to right, (rgba(181, 172, 73, 0.4), rgba(60, 165, 92, 0.4))), url('./img/markus-spiske-wood.jpg');
+    }
+
+    .navbar-brand img {
+        width: 8vh;
+    }
+
+    .logoImg {
+        width: 80%;
+        margin: -300px auto 100px auto;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 850px) {
+    .container-fluid .heading {
+        background-image:
+            linear-gradient(to right, (rgba(181, 172, 73, 0.4), rgba(60, 165, 92, 0.4))), url('./img/markus-spiske-wood.jpg');
+        height: 100vh;
+    }
+
+    .navbar-brand img {
+        width: 20vh;
+    }
+
+    .logoImg {
+        width: 50%;
+        margin: -200px auto 100px auto;
+    }
+}
+
+// start of content descriptions
+.contentBlock h3 {
+    color: $headingColor;
+    margin-top: 10rem;
+}
+
+.contentBlock i {
+    color: $headingColor;
+    font-size: 24px;
+}
+
+.contentBlock p {
+    font-size: 20px;
+    line-height: 3;
+}
+
+.contentBlock .foodPics {
+    width: 100%;
+}
+
+.contentBlock .reserveDinner h3 {
+    margin-top: 5rem;
+}
+
+// horizontal bar for aesthetics
+hr {
+    border: .5px solid black;
+    max-width: 30%;
+    margin: 75px auto 50px auto;
+}
+
+// Responsive service content
+@media only screen  and (max-width: 600px) {
+    .contentBlock {
+        padding-top: 0;
+    }
+
+    .contentBlock .foodPics {
+        width: 100%;
+    }
+
+    .contentBlock h3 {
+        font-size: 24px;
+    }
+
+    .contentBlock p {
+        margin-top: 0;
+        font-size: 16px;
+        line-height: 2.5;
+    }
+
+    hr {
+        margin: 20px auto;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .contentBlock {
+        padding-top: 0;
+    }
+
+    .contentBlock h3 {
+        margin-top: 0;
+    }
+
+    .contentBlock .foodPics {
+        width: 50%;
+    }
+
+    .contentBlock .reserveDinner h3 {
+        margin-top: 0;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .contentBlock {
+        padding-top: 0;
+    }
+
+    .contentBlock h3 {
+        margin-top: 0;
+    }
+
+    .contentBlock p {
+        line-height: 2;
+    }
+
+    .contentBlock .foodPics {
+        width: 80%;
+    }
+
+    .contentBlock .reserveDinner h3 {
+        margin-top: 0;
+    }
+}
+
+// menu formatting
+.menu h3 {
+    font-weight: 700;
+    font-size: 32px;
+    color: $headingColor;
+    line-height: 1.5;
+}
+
+.menuImg {
+    padding: 20px;
+}
+
+.menuImg img {
+    border-radius: $borderRadius;
+}
+
+// Responsive Menu
+@media (min-width: 350px) and (max-width: 450px) {
+    .menuImg {
+        padding: 0;
+    }
+
+    .menuImg img {
+        width: 90vw;
+    }
+
+    .menu {
+        padding: 10px;
+    }
+
+    .menu h3 {
+        text-align: center;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 850px) {
+    .menuImg img {
+        width: 100vh;
+    }
+}
+
+// footer with contact info and links
+.footer {
+    background-color: $secondaryColor;
+    color: black;
+    margin-bottom: 50px;
+}
+
+// address info
+#address span {
+    color: $headingColor;
+}
+
+#address a {
+    text-decoration: none;
+    color: $headingColor;
+}
+
+#address a:hover {
+    color: blue;
+}
+
+.icon-logos {
+    height: 50px;
+    padding: 10px;
+}
+
+// operating hours info
+#hours span {
+    color: $headingColor;
+}
+
+// contact form
+#contact span {
+    color: $headingColor;
+}
+
+form .form-group input {
+    margin-bottom: 5px;
+}
+
+form textarea {
+    resize: none;
+    margin-bottom: 10px;
+}
+
+form .btn-outline-primary {
+    color: black;
+    border-color: $headingColor;
+}
+
+// Responsive Form
+@media (min-width: 350px) and (max-width: 450px) {
+    .footer {
+        margin-bottom: 0;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 850px) {
+    .footer {
+        margin-bottom: 0;
+    }
+}
+
+@media (min-width: 1000px) and (max-width: 1100px) {
+    .footer {
+        margin-bottom: 0;
+    }
+}
