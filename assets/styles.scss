@@ -1,5 +1,6 @@
 $primaryColor: rgb(245, 243, 241);
 $secondaryColor: rgb(235, 183, 41);
+$navColor: rgb(76, 83, 10);
 $headingColor: rgb(11, 97, 8);
 $trimColor: rgb(112, 72, 20);
 $borderRadius: 20px;
@@ -17,7 +18,7 @@ body {
 
 .container-fluid .heading {
     background-image:
-        linear-gradient(to right, (rgba(181, 172, 73, 0.4), rgba(60, 165, 92, 0.4))), url('./img/rob-jaudon-farm.jpg');
+        linear-gradient(to right, (rgba(181, 172, 73, 0.5), rgba(60, 165, 92, 0.3))), url('./img/rob-jaudon-farm.jpg');
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -36,7 +37,7 @@ body {
 }
 
 .navbar a {
-    color: $headingColor !important;
+    color: $navColor !important;
     font-size: 22px;
 }
 
@@ -50,7 +51,7 @@ body {
 }
 
 // Responsive heading/navigation styling
-@media only screen  and (max-width: 600px) {
+@media only screen and (max-width: 600px) {
     .container-fluid .heading {
         background-image:
             linear-gradient(to right, (rgba(181, 172, 73, 0.4), rgba(60, 165, 92, 0.4))), url('./img/markus-spiske-wood.jpg');
@@ -115,7 +116,7 @@ hr {
 }
 
 // Responsive service content
-@media only screen  and (max-width: 600px) {
+@media only screen and (max-width: 600px) {
     .contentBlock {
         padding-top: 0;
     }
