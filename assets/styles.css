@@ -40,7 +40,7 @@ body {
   margin: -110px auto 100px auto;
 }
 
-@media only screen and (max-width: 600px) {
+@media (max-width: 600px) {
   .container-fluid .heading {
     background-image: linear-gradient(to right, rgba(181, 172, 73, 0.4), rgba(60, 165, 92, 0.4)), url("./img/markus-spiske-wood.jpg");
   }
@@ -53,9 +53,8 @@ body {
   }
 }
 
-@media (min-width: 600px) and (max-width: 850px) {
+@media (min-width: 600px) and (max-width: 900px) {
   .container-fluid .heading {
-    background-image: linear-gradient(to right, rgba(181, 172, 73, 0.4), rgba(60, 165, 92, 0.4)), url("./img/markus-spiske-wood.jpg");
     height: 100vh;
   }
   .navbar-brand img {
@@ -63,8 +62,12 @@ body {
   }
   .logoImg {
     width: 50%;
-    margin: -200px auto 100px auto;
+    margin: -225px auto 100px auto;
   }
+}
+
+.mobileFarm {
+  display: none;
 }
 
 .contentBlock h3 {
@@ -83,11 +86,26 @@ body {
 }
 
 .contentBlock .foodPics {
-  width: 100%;
+  max-width: 50%;
 }
 
 .contentBlock .reserveDinner h3 {
   margin-top: 5rem;
+}
+
+.contentBlock .dining {
+  margin-top: 10rem;
+}
+
+.contentBlock .reserveDinner {
+  margin-left: 15rem;
+  margin-top: 8rem;
+  max-width: 50%;
+}
+
+.contentBlock .reserveDinnerImg {
+  margin: 5rem auto;
+  max-width: 80%;
 }
 
 hr {
@@ -96,38 +114,75 @@ hr {
   margin: 75px auto 50px auto;
 }
 
-@media only screen and (max-width: 600px) {
-  .contentBlock {
-    padding-top: 0;
+@media (max-width: 600px) {
+  .mobileFarm {
+    display: block;
+    margin-top: 15rem;
+    margin-bottom: -20rem;
+  }
+  .mobileFarm img {
+    border-radius: 25px;
   }
   .contentBlock .foodPics {
-    width: 100%;
+    border-radius: 25px;
+    max-width: 80%;
   }
   .contentBlock h3 {
     font-size: 24px;
   }
   .contentBlock p {
-    margin-top: 0;
+    padding: 0 20px 30px 20px;
     font-size: 16px;
-    line-height: 2.5;
+    line-height: 2;
   }
   hr {
     margin: 20px auto;
   }
+  .contentBlock .reserveDinner {
+    margin-left: 0;
+    margin-top: -3rem;
+    max-width: 100%;
+  }
 }
 
-@media only screen and (min-width: 600px) {
+@media (min-width: 600px) and (max-width: 900px) {
+  .mobileFarm {
+    display: none;
+  }
   .contentBlock {
     padding-top: 0;
+    margin-top: -50px;
   }
   .contentBlock h3 {
-    margin-top: 0;
+    color: #0b6108;
+    font-size: 26px;
+    margin-top: -160px;
+  }
+  .contentBlock i {
+    color: #0b6108;
+    font-size: 18px;
+  }
+  .contentBlock p {
+    font-size: 16px;
+    margin-top: 1rem;
+    line-height: 2;
+    padding-top: 0 !important;
   }
   .contentBlock .foodPics {
-    width: 50%;
+    max-width: 80%;
+    border-radius: 25px;
   }
   .contentBlock .reserveDinner h3 {
+    font-size: 26px;
     margin-top: 0;
+  }
+  .contentBlock .reserveDinner {
+    margin-left: 5rem;
+    margin-top: 0rem;
+  }
+  .contentBlock .reserveDinnerImg {
+    margin: 1.5rem auto;
+    max-width: 100%;
   }
 }
 
@@ -179,7 +234,7 @@ hr {
   }
 }
 
-@media (min-width: 600px) and (max-width: 850px) {
+@media (min-width: 600px) and (max-width: 900px) {
   .menuImg img {
     width: 100vh;
   }
